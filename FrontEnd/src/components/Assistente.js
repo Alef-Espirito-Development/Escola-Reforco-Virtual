@@ -19,8 +19,8 @@ const Assistente = () => {
   const [assistantTyping, setAssistantTyping] = useState(false);
   const [assistantMessage, setAssistantMessage] = useState('');
 
-
-  const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+  const key = 'sk-proj-x3x5GAw4GQUGnLqacxnnT3BlbkFJ1AiPpNkhTIq0nLt1qD4d';
+  const apiKey = process.env.REACT_APP_OPENAI_API_KEY  || key;
 
   const theme = useTheme();
 
